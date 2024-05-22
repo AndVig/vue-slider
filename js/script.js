@@ -70,6 +70,12 @@ createApp({
                 this.currentIndex=0;
             }
         },
+        changeImage(idx){
+            this.currentIndex=idx;
+        }
+    },
+    created(){
+        setInterval(this.nextImage,3000);
     }
 }).mount("#app");
 
